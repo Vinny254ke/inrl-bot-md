@@ -16,11 +16,11 @@ module.exports = {
     BGM_URL : process.env.BGM_URL || "null",
     REJECT_CALL : toBool(process.env.REJECT_CALL || 'false'),
     BADWORD_BLOCK : toBool(process.env.BADWORD_BLOCK || 'false'),
-    ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "false"),
+    ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "true"),
     PM_BLOCK : toBool(process.env.PM_BLOCK || "false"),
     BGMBOT : toBool(process.env.BGMBOT || "false"),
     CALL_BLOCK : toBool(process.env.CALL_BLOCK || "false"),
-    STATUS_VIEW : process.env.STATUS_VIEW || "false",
+    STATUS_VIEW : process.env.STATUS_VIEW || "true",
     SAVE_STATUS : toBool(process.env.SAVE_STATUS || "false"),
     ADMIN_SUDO_ACCESS: toBool(process.env.ADMIN_SUDO_ACCESS || "false"),
     DISABLE_PM: toBool(process.env.DISABLE_PM || "false"),
@@ -28,12 +28,12 @@ module.exports = {
     ERROR_MSG : toBool(process.env.ERROR_MSG || "true"),
     AJOIN: toBool(process.env.AJOIN || 'false'),
     READ : process.env.READ ||  "false",//true, command
-    CHATBOT : process.env.CHATBOT || "false",//true, pm, group
+    CHATBOT : process.env.CHATBOT || "true",//true, pm, group
     REACT : process.env.REACT || "false",//true, command, emoji
     WARNCOUND : process.env.WARNCOUND || 5,
     BOT_INFO : process.env.BOT_INFO || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
-    WORKTYPE : process.env.WORKTYPE || "private",
-    PREFIX : process.env.PREFIX || "[.,!]",//both  .  and [.] equal, for multi prefix we use [] this
+    WORKTYPE : process.env.WORKTYPE || "public",
+    PREFIX : process.env.PREFIX || ".",//both  .  and [.] equal, for multi prefix we use [] this
     LANG : process.env.LANG || "en",
     PERSONAL_MESSAGE: process.env.PERSONAL_MESSAGE || "null",
     BOT_PRESENCE : process.env.BOT_PRESENCE || "unavailable",
